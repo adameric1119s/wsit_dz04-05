@@ -1,0 +1,280 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.naslov {
+  margin-bottom: 15px;
+  text-align: center;
+}
+body {
+  background-image: url("../slike/shattered-island.gif");
+}
+body header {
+  margin: 0 auto;
+  width: 85%;
+  background-color: #366d42;
+}
+body header img {
+  margin: 15px;
+  width: 150px;
+}
+body header span {
+  position: relative;
+  bottom: 22px;
+  color: #33e888;
+  font-size: 16pt;
+}
+body header ul {
+  float: right;
+  margin-right: 25px;
+}
+body header ul li {
+  display: inline-block;
+  list-style-type: none;
+  height: 25px;
+  width: 100px;
+  background-color: #8b948f;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px 8px;
+  padding-top: 4px;
+}
+body header ul li a {
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  color: #366d42;
+}
+body header ul li:hover {
+  background-color: #33e888;
+  transition-duration: 0.5s;
+}
+body header .hamburger {
+  width: 45px;
+  height: 45px;
+  background-color: #8b948f;
+  padding: 8px;
+  border-radius: 5px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 15px;
+  display: none;
+}
+body header .hamburger .linija {
+  margin-top: 4px;
+  background-color: white;
+  height: 5px;
+}
+body .sadrzaj {
+  margin: 15px auto;
+  width: 85%;
+  padding: 10px;
+  background-color: rgba(43, 145, 94, 0.5);
+}
+body .sadrzaj .levo {
+  vertical-align: top;
+  width: 20%;
+  float: left;
+}
+body .sadrzaj .levo h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+body .sadrzaj .levo .vest {
+  margin: 15px 25px;
+  background-color: rgba(69, 165, 56, 0.616);
+  border-radius: 15px;
+  padding: 5px;
+}
+body .sadrzaj .levo .vest img {
+  width: 95%;
+  margin: 10px;
+  border-radius: 10px;
+}
+body .sadrzaj .levo .vest h3 {
+  margin-bottom: 5px;
+}
+body .sadrzaj .levo .vest p {
+  font-size: 11pt;
+}
+body .sadrzaj .sredina {
+  vertical-align: top;
+  display: inline-block;
+  width: 59%;
+  border-right: solid black;
+  border-left: solid black;
+}
+body .sadrzaj .sredina h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+body .sadrzaj .sredina .proizvod {
+  display: inline-block;
+  background-color: #45b3a0;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin: 25px 0;
+  margin-left: 20px;
+  padding: 20px;
+  width: 30%;
+}
+body .sadrzaj .sredina .proizvod img {
+  width: 90%;
+  margin: 15px;
+  border-radius: 10px;
+}
+body .sadrzaj .sredina .proizvod h2 {
+  margin-left: 15px;
+}
+body .sadrzaj .sredina .proizvod .brproizvoda {
+  width: 40px;
+  height: 25px;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+body .sadrzaj .sredina .proizvod .ukorpu {
+  width: 80px;
+  height: 25px;
+  background-color: #33e888;
+}
+body .sadrzaj .sredina .info {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(109, 201, 96, 0.616);
+  border-radius: 10px;
+}
+body .sadrzaj .sredina .galerija {
+  background-color: rgba(109, 201, 96, 0.616);
+  margin: 60px 20px;
+  border-radius: 10px;
+  padding-left: 1%;
+}
+body .sadrzaj .sredina .galerija img {
+  width: 27%;
+  margin: 18px;
+  border-radius: 10px;
+}
+body .sadrzaj .kontakt {
+  width: 50%;
+  margin: 30px 0;
+}
+body .sadrzaj .kontakt .kontaktforma {
+  margin: 10px;
+  padding: 10px;
+  border-color: #bebebe;
+  border-style: solid;
+  width: 300px;
+  color: #555555;
+  outline: none;
+}
+body .sadrzaj .kontakt .formalevo {
+  float: left;
+  width: 49%;
+}
+body .sadrzaj .kontakt .formadesno {
+  vertical-align: top;
+  float: right;
+  width: 49%;
+}
+body .sadrzaj .kontakt #kontaktbtn {
+  margin-left: 10px;
+  outline: none;
+  width: 300px;
+  height: 40px;
+  background-color: #366d42;
+  border: solid #33e888;
+  margin-top: 25px;
+}
+body .sadrzaj .desno {
+  vertical-align: top;
+  width: 20%;
+  float: right;
+}
+body .sadrzaj .desno h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+body .sadrzaj .desno form label {
+  display: inline-block;
+  width: 80px;
+  margin: 5px;
+}
+body .sadrzaj .desno form #formdate {
+  position: relative;
+  bottom: 10px;
+  margin-top: 5px;
+  width: 173px;
+}
+body .sadrzaj .desno form #dugme {
+  width: 80px;
+  height: 30px;
+  margin: 15px 15px;
+}
+body .sadrzaj iframe {
+  margin: 10px auto;
+  display: block;
+  width: 80vw;
+  border-radius: 5px;
+}
+body footer {
+  margin: 0 auto;
+  background-color: black;
+  height: 35px;
+  width: 85%;
+}
+body footer p {
+  display: inline-block;
+  color: white;
+  margin: 10px 5px;
+  font-size: 8pt;
+}
+@media only screen and (max-width: 1450px) {
+  body header span {
+    font-size: 13pt;
+  }
+  body header ul {
+    display: none;
+  }
+  body header ul li {
+    display: block;
+    border-radius: 0px;
+    height: 17px;
+    font-size: 9pt;
+    padding-bottom: 4px;
+  }
+  body header ul li:not(:first-child) {
+    margin-top: -20px;
+    border-top: 1px black solid;
+  }
+  body header .hamburger {
+    display: inline-block;
+  }
+  body .sadrzaj .levo {
+    float: none;
+    width: 100%;
+  }
+  body .sadrzaj .desno {
+    float: none;
+    width: 100%;
+  }
+  body .sadrzaj .desno form {
+    width: 30%;
+    margin: 0 auto;
+  }
+  body .sadrzaj .sredina {
+    border: none;
+    width: 100%;
+  }
+  body .sadrzaj .sredina .proizvod {
+    display: block;
+    width: 96%;
+  }
+  body .sadrzaj .sredina .proizvod img {
+    margin: 0 30px;
+  }
+  body .sadrzaj .kontakt .formadesno {
+    float: none;
+  }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/less.css">
+    <link href="css/lightbox.min.css" rel="stylesheet" />
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".hamburger").click(function () {
+                $("ul").slideToggle(300);
+            })
+            $(window).resize(function () {
+                if($(".hamburger").css("display") == "none")
+                {
+                    $("header ul").css("display","block");
+                }
+            })
+        })
+    </script>
+    <title>Domaci 4-5</title>
+</head>
+<body>
+    <header>
+        <img src="slike/placeholder-logo.png" alt="logo">
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+        <div class="hamburger">
+            <div class="linija"></div>
+            <div class="linija"></div>
+            <div class="linija"></div>
+        </div>
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="onama.html">O Nama</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </header>
+    <div class="sadrzaj">
+
+        <div class="sredina">
+            <h1>O nama</h1>
+            <div class="info">
+                <p>Mi smo lanac prodavnica specijalizovan za prodaju konzola. Pored osnovnih programa konzola, igara i opreme za PC, Sony Playstation, Microsoft XBOX i Nintendo platforme, Games nudi širok izbor artikala vezanih za e-sports. U svetu sporta ova disciplina je odavno u rangu, ako ne i ispred tradicionalnih sportova. Gejming kao naše osnovno opredeljenje određuje i ostatak asortimana – prateći program sa gejming tematikom: akcione figure, privesci, šolje, torbe, rančevi, gejming stolice, stolovi...</p><br>
+                <p>Jedna pogodnost koju nudimo vlasnicima konzola - otkupljujemo i prodajemo korišćene konzolne igre. Ako vam je neka igra višak i samo zauzima mesto na polici, dođite do neke od naših radnji da igru otkupimo. Ako vam je neka igra skupa, proverite da li je u ponudi imamo kao korišćenu i možete proći jeftinije.</p><br>
+                <p>Prepoznati smo kao ultimativno prodajno mesto za sve kojima je gejming stil života. Naši aduti su: najveći izbor igara i opreme, obučeno osoblje, nova izdanja uvek i na vreme.</p>
+            </div>
+            <div class="galerija">
+                <a href="slike/onama/Nintendo-DS-2DS-3DS_310_170px.jpg" data-lightbox="image-1" data-title="Nintendo 2DS"><img src="slike/onama/Nintendo-DS-2DS-3DS_310_170px.jpg" alt="nintendods"></a>
+                <a href="slike/onama/PC-dodatna-oprema_310_170px.jpg" data-lightbox="image-1" data-title="PC Dodatna oprema"><img src="slike/onama/PC-dodatna-oprema_310_170px.jpg" alt="pcdodatnaoprema"></a>
+                <a href="slike/onama/Xbox-seriesX28129_310_170px.jpg" data-lightbox="image-1" data-title="Xbox Series X"><img src="slike/onama/Xbox-seriesX28129_310_170px.jpg" alt="xboxseriesx"></a>
+                <a href="slike/onama/XBOX-Xbox-One_310_170px.jpg" data-lightbox="image-1" data-title="Xbox One"><img src="slike/onama/XBOX-Xbox-One_310_170px.jpg" alt="xboxone"></a>
+                <a href="slike/onama/PC-igre_310_170px.jpg" data-lightbox="image-1" data-title="PC Monitori"><img src="slike/onama/PC-igre_310_170px.jpg" alt="pcmonitori"></a>
+                <a href="slike/onama/Nintendo-Retro-NES-SNES_310_170px.jpg" data-lightbox="image-1" data-title="Super Nintendo"><img src="slike/onama/Nintendo-Retro-NES-SNES_310_170px.jpg" alt="supernintendo"></a>
+            </div>
+        </div>
+        <div class="levo">
+            <h1>Vesti</h1>
+            <div class="vest">
+                <h3>PlayStation 5 će konačno podržavati 1440p monitore</h3>
+                <p>Iako je sa objavom PS4 Pro modela Sony ponudio podršku za 4K ekrane, kompanija 
+                    nije nudila rešenje za one koji bi se odlučili za skromniju nadogradnju ekrana,
+                    kao što je 1440p. Izgleda da će sa PlayStation 5 objavom Sony konačno ponuditi
+                    podršku za 1440p displeje.</p>
+                <img src="slike/vest1.jpg" alt="vest1">
+            </div>
+            <div class="vest">
+                <h3>Izašao trejler za NBA&nbsp2K21</h3>
+                <p>NBA 2K21 će stići na Next-gen (konzole sledeće generacije) mnogo ranije nego što
+                     je očekivano, a novi Gameplay trejler  nam prikazuje šta sve možemo da očekujemo!</p>
+                <img src="slike/vest2.jpg" alt="vest2">
+            </div>
+        </div>
+        <div class="desno">
+            <h1>Registracija</h1>
+            <form action="" method="POST">
+                <label for="email">Email: </label>
+                <input type="email" name="email" class="txtunos">
+                <label for="username">Username: </label>
+                <input type="text" name="username" class="txtunos">
+                <label for="password">Password: </label>
+                <input type="password" name="password" class="txtunos">
+                <label for="telefon">Telefon: </label>
+                <input type="tel" name="telefon" class="txtunos">
+                <label for="datum">Datum rodjenja: </label>
+                <input id="formdate" type="date" name="datum">
+                <br><label>Pol:</label>
+                <span>M </span><input type="radio" name="pol" value="muski">
+                <span>Ž </span><input type="radio" name="pol" value="zenski">
+                <br>
+                <label for="grad">Grad: </label>
+                <select name="grad">
+                    <option value="Beograd">Beograd</option>
+                    <option value="Niš">Niš</option>
+                    <option value="Novi Sad">Novi Sad</option>
+                    <option value="Subotica">Subotica</option>
+                    <option value="Vranje">Vranje</option>
+                </select>
+                <br>
+                <input id="dugme" type="submit" value="Pošalji">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Adam Erić S11/2019</p>
+        <p>Beograd, Zvezdara</p>
+        <p>Email: adam.eric101@gmail.com</p>
+        <p>Broj telefona: 0677672000</p>
+    </footer>
+    <script type="text/javascript" src="js/lightbox-plus-jquery.js"></script>.
+</body>
+</html>

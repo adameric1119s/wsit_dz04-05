@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/less.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".hamburger").click(function () {
+                $("ul").slideToggle(300);
+            })
+            $(window).resize(function () {
+                if($(".hamburger").css("display") == "none")
+                {
+                    $("header ul").css("display","block");
+                }
+            })
+        })
+    </script>
+    <title>Domaci 4-5</title>
+</head>
+<body>
+    <header>
+        <img src="slike/placeholder-logo.png" alt="logo">
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+        <div class="hamburger">
+            <div class="linija"></div>
+            <div class="linija"></div>
+            <div class="linija"></div>
+        </div>
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="onama.html">O Nama</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </header>
+    <div class="sadrzaj">
+        <div class="sredina">
+            <h1>Prodavnica</h1>
+            <div class="proizvod">
+                <h2>PlayStation 4</h2>
+                <img src="slike/ps4.jpg" alt="proizvod1">
+                <p>Cena: 48.999 RSD</p>
+                <label for="korpa"></label>
+                <input type="number" min="0" value="1" name="brproizvoda" class="brproizvoda">
+                <input type="button" value="U korpu" name="ukorpu" class="ukorpu">
+            </div>
+            <div class="proizvod">
+                <h2>PlayStation 4 Pro</h2>
+                <img src="slike/ps4pro.jpg" alt="proizvod1">
+                <p>Cena: 54.999 RSD</p>
+                <label for="korpa"></label>
+                <input type="number" min="0" value="1" name="brproizvoda" class="brproizvoda">
+                <input type="button" value="U korpu" name="ukorpu" class="ukorpu">
+            </div>
+            <div class="proizvod">
+                <h2>PlayStation 5</h2>
+                <img src="slike/ps5.jpg" alt="proizvod1">
+                <p>Cena: 63.999 RSD</p>
+                <label for="korpa"></label>
+                <input type="number" min="0" value="1" name="brproizvoda" class="brproizvoda">
+                <input type="button" value="U korpu" name="ukorpu" class="ukorpu">
+            </div>
+            <div class="proizvod">
+                <h2>Xbox One X</h2>
+                <img src="slike/xboxone.jpg" alt="proizvod1">
+                <p>Cena: 59.999 RSD</p>
+                <label for="korpa"></label>
+                <input type="number" min="0" value="1" name="brproizvoda" class="brproizvoda">
+                <input type="button" value="U korpu" name="ukorpu" class="ukorpu">
+            </div>
+            <div class="proizvod">
+                <h2>Xbox Series X</h2>
+                <img src="slike/xboxseriesx.jpg" alt="proizvod1">
+                <p>Cena: 64.999 RSD</p>
+                <label for="korpa"></label>
+                <input type="number" min="0" value="1" name="brproizvoda" class="brproizvoda">
+                <input type="button" value="U korpu" name="ukorpu" class="ukorpu">
+            </div>
+            <div class="proizvod">
+                <h2>Nintendo Switch</h2>
+                <img src="slike/switch.jpg" alt="proizvod1">
+                <p>Cena: 46.999 RSD</p>
+                <label for="korpa"></label>
+                <input type="number" min="0" value="1" name="brproizvoda" class="brproizvoda">
+                <input type="button" value="U korpu" name="ukorpu" class="ukorpu">
+            </div>
+        </div>
+        <div class="levo">
+            <h1>Vesti</h1>
+            <div class="vest">
+                <h3>PlayStation 5 će konačno podržavati 1440p monitore</h3>
+                <p>Iako je sa objavom PS4 Pro modela Sony ponudio podršku za 4K ekrane, kompanija 
+                    nije nudila rešenje za one koji bi se odlučili za skromniju nadogradnju ekrana,
+                    kao što je 1440p. Izgleda da će sa PlayStation 5 objavom Sony konačno ponuditi
+                    podršku za 1440p displeje.</p>
+                <img src="slike/vest1.jpg" alt="vest1">
+            </div>
+            <div class="vest">
+                <h3>Izašao trejler za NBA&nbsp2K21</h3>
+                <p>NBA 2K21 će stići na Next-gen (konzole sledeće generacije) mnogo ranije nego što
+                     je očekivano, a novi Gameplay trejler  nam prikazuje šta sve možemo da očekujemo!</p>
+                <img src="slike/vest2.jpg" alt="vest2">
+            </div>
+        </div>
+        <div class="desno">
+            <h1>Registracija</h1>
+            <form action="" method="POST">
+                <label for="email">Email: </label>
+                <input type="email" name="email" class="txtunos">
+                <label for="username">Username: </label>
+                <input type="text" name="username" class="txtunos">
+                <label for="password">Password: </label>
+                <input type="password" name="password" class="txtunos">
+                <label for="telefon">Telefon: </label>
+                <input type="tel" name="telefon" class="txtunos">
+                <label for="datum">Datum rodjenja: </label>
+                <input id="formdate" type="date" name="datum">
+                <br><label>Pol:</label>
+                <span>M </span><input type="radio" name="pol" value="muski">
+                <span>Ž </span><input type="radio" name="pol" value="zenski">
+                <br>
+                <label for="grad">Grad: </label>
+                <select name="grad">
+                    <option value="Beograd">Beograd</option>
+                    <option value="Niš">Niš</option>
+                    <option value="Novi Sad">Novi Sad</option>
+                    <option value="Subotica">Subotica</option>
+                    <option value="Vranje">Vranje</option>
+                </select>
+                <br>
+                <input id="dugme" type="submit" value="Pošalji">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Adam Erić S11/2019</p>
+        <p>Beograd, Zvezdara</p>
+        <p>Email: adam.eric101@gmail.com</p>
+        <p>Broj telefona: 0677672000</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,350 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@svetlozelena:#33e888;
+@tamnozelena:#366d42;
+@zelenapozadina:rgba(69, 165, 56, 0.616);
+.sidebar(@sirina){
+    vertical-align: top;
+    width: @sirina;
+}
+.naslov{
+    margin-bottom: 15px;
+    text-align: center;
+}
+.slika(@sirina,@margine){
+    width: @sirina;
+    margin: @margine;
+    border-radius: 10px;
+}
+body
+{
+    background-image: url("../slike/shattered-island.gif");
+    header
+    {
+        margin: 0 auto;
+        width: 85%;
+        background-color:@tamnozelena;
+        img
+        {
+            margin: 15px;
+            width: 150px;
+        }
+        span
+        {
+            position: relative;
+            bottom: 22px;
+            color: @svetlozelena;
+            font-size: 16pt;
+        }
+        ul
+        {
+            float: right;
+            margin-right: 25px;
+            li
+            {
+                display: inline-block;
+                list-style-type: none;
+                height: 25px;
+                width: 100px;
+                background-color:#8b948f;
+                text-align: center;
+                border-radius: 10px;
+                margin: 20px 8px;
+                padding-top: 4px;
+                a
+                {
+                    display: block;
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: @tamnozelena;
+                }
+            }
+            li:hover
+            {
+                background-color: @svetlozelena;
+                transition-duration: 0.5s;
+            }
+        }
+        .hamburger
+        {
+            width:45px;
+            height: 45px;
+            background-color: #8b948f;
+            padding: 8px;
+            border-radius: 5px;
+            float: right;
+            margin-top: 10px;
+            margin-right: 15px;
+            display: none;
+            .linija
+            {
+                margin-top: 4px;
+                background-color: white;
+                height: 5px;
+            }
+        }
+    }
+    .sadrzaj
+    {
+        margin: 15px auto;
+        width: 85%;
+        padding: 10px;
+        background-color: rgba(43, 145, 94, 0.5);
+        .levo
+        {
+            .sidebar(20%);
+            float:left;
+            h1
+            {
+                .naslov
+            }
+            .vest
+            {
+                margin: 15px 25px;
+                background-color:@zelenapozadina;
+                border-radius: 15px;
+                padding: 5px;
+                img
+                {
+                    .slika(95%, 10px);
+                }
+                h3
+                {
+                    margin-bottom: 5px;
+                }
+                p
+                {
+                    font-size: 11pt;
+                }
+            }
+        }
+        .sredina
+        {
+            vertical-align: top;
+            display: inline-block;
+            width: 59%;
+            border-right: solid black;
+            border-left: solid black;
+            h1
+            {
+                .naslov
+            }
+            .proizvod
+            {
+                display: inline-block;
+                background-color:rgb(69, 179, 160);
+                border-top-left-radius: 50px;
+                border-bottom-right-radius: 50px;
+                margin: 25px 0;
+                margin-left: 20px;
+                padding: 20px;
+                width: 30%;
+                img
+                {
+                    .slika(90%,15px);
+                }
+                h2
+                {
+                    margin-left: 15px;
+                }
+                .brproizvoda
+                {
+                    width: 40px;
+                    height: 25px;
+                    margin-top: 10px;
+                    margin-right: 15px;
+                }
+                .ukorpu
+                {
+                    width: 80px;
+                    height: 25px;
+                    background-color: @svetlozelena;
+                }
+            }
+            .info
+            {
+                margin: 20px;
+                padding: 20px;
+                background-color:lighten(@zelenapozadina,15%);
+                border-radius: 10px;
+            }
+            .galerija
+            {   
+                background-color:lighten(@zelenapozadina,15%);
+                margin: 60px 20px;
+                border-radius: 10px;
+                padding-left: 1%;
+                img
+                {
+                    .slika(27%,18px)
+                }
+            }
+        }
+        .kontakt
+        {
+            width: 50%;
+            margin: 30px 0;
+            .kontaktforma
+            {   
+                margin: 10px;
+                padding: 10px;
+                border-color: rgb(190, 190, 190);
+                border-style: solid;
+                width: 300px;
+                color: rgb(85, 85, 85);
+                outline: none;
+            }
+            .formalevo
+            {
+                float: left;
+                width: 49%;
+            }
+            .formadesno
+            {
+                vertical-align: top;
+                float: right;
+                width: 49%;
+            }
+            #kontaktbtn
+            {
+                margin-left: 10px;
+                outline: none;
+                width: 300px;
+                height: 40px;
+                background-color: @tamnozelena;
+                border: solid @svetlozelena;
+                margin-top: 25px;
+            }
+        }
+        .desno
+        {
+            .sidebar(20%);
+            float:right;
+            h1
+            {
+                .naslov
+            }
+            form
+            {
+                label
+                {
+                    display: inline-block;
+                    width: 80px;
+                    margin: 5px;
+                }
+                #formdate
+                {
+                    position: relative;
+                    bottom: 10px;
+                    margin-top: 5px;
+                    width: 173px;
+                }
+                #dugme
+                {
+                    width: 80px;
+                    height: 30px;
+                    margin: 15px 15px;
+                }
+            }
+        }
+        iframe
+        {
+            margin: 10px auto;
+            display: block;
+            width: 80vw;
+            border-radius: 5px;
+        }
+    }
+    footer
+    {
+        margin: 0 auto;
+        background-color: black;
+        height: 35px;
+        width: 85%;
+        p
+        {
+            display: inline-block;
+            color: white;
+            margin: 10px 5px;
+            font-size: 8pt;
+        }
+    }
+}
+@media only screen and (max-width:1450px)
+{
+    body
+    {
+        header
+        {
+            span
+            {
+                font-size: 13pt;
+            }
+            ul
+            {
+                display: none;
+                li
+                {
+                    display: block;
+                    border-radius: 0px;
+                    height: 17px;
+                    font-size: 9pt;
+                    padding-bottom: 4px;
+                }
+                li:not(:first-child)
+                {
+                    margin-top: -20px;
+                    border-top: 1px black solid;
+                }
+            }
+            .hamburger
+            {
+                display: inline-block;
+            }
+        }
+        .sadrzaj
+        {
+            .levo
+            {
+                float: none;
+                width: 100%;
+            }
+            .desno
+            {
+                float: none;
+                width: 100%;
+                form
+                {
+                    width: 30%;
+                    margin: 0 auto;
+                }
+            }
+            .sredina
+            {
+                border: none;
+                width: 100%;
+                .proizvod
+                {
+                    display: block;
+                    width: 96%;
+                    img
+                    {
+                        margin: 0 30px;
+                    }
+                }
+            }
+            .kontakt
+            {
+                .formadesno
+                {
+                    float: none;
+                }
+            }
+        }
+    }
+}
